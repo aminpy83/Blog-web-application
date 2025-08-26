@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple HTML Page </title>
+  <meta name="description" content="A minimal HTML page with no CSS styles." />
+  <link href="/public/styles/main.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+  <header>
+    <h1 class="text-3xl font-bold underline">
+      Welcome to My Plain HTML Page
+    </h1>
+    <div class="relative lg:row-span-2">
+        <div class="absolute inset-px rounded-lg bg-gray-800 lg:rounded-l-4xl"></div>
+        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+          <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+            <p class="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Mobile friendly</p>
+            <p class="mt-2 max-w-lg text-sm/6 text-gray-400 max-lg:text-center">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</p>
+          </div>
+          <div class="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
+            <div class="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 outline outline-white/20">
+              <img src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png" alt="" class="size-full object-cover object-top">
+            </div>
+          </div>
+        </div>
+        <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-white/15 lg:rounded-l-4xl"></div>
+      </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section id="about">
+      <h2>About This Page</h2>
+      <p>
+        This is a simple HTML document written in English with no styles applied.
+        It uses only semantic HTML elements to structure the content.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>No CSS or inline styles</li>
+        <li>Semantic sections and headings</li>
+        <li>Accessible navigation</li>
+        <li>Clean and minimal markup</li>
+      </ul>
+    </section>
+
+    <article aria-labelledby="sample-article-title">
+      <h2 id="sample-article-title">Sample Article</h2>
+      <p>
+        Here is a short example article. You can duplicate this section to add more content
+        or replace it with your own text. Since there are no styles, the browser’s default
+        rendering will be used.
+      </p>
+      <h3>Subheading</h3>
+      <p>
+        Additional details can go here. You can also include lists, links, and other
+        HTML elements as needed.
+      </p>
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Placeholder image" />
+        <figcaption>A placeholder image with a descriptive caption.</figcaption>
+      </figure>
+    </article>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name</label><br />
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div>
+          <label for="email">Email</label><br />
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div>
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2025 Plain HTML Example. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
