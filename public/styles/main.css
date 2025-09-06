@@ -1,3 +1,4 @@
+/* backgroun from uiverse */
 .bodyBack {
   position: relative;
   z-index: 0;
@@ -305,14 +306,14 @@
   border: none;
   border-radius: 50%;
   background-color: white;
-  display: flex; /* اضافه شده برای مرکزیت */
-  justify-content: center; /* مرکزیت افقی */
-  align-items: center; /* مرکزیت عمودی */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   transition: .4s all;
 }
 
 .btn2 .telegram {
-  margin: 0; /* حذف مارجین‌های قبلی */
+  margin: 0; 
   fill: #0088cc;
 }
 
@@ -354,11 +355,11 @@
 }
 
 .btn2:hover {
-  background-color: #0088cc; /* پشت (background) آبی تلگرام در hover */
+  background-color: #0088cc; 
 }
 
 .btn2:hover .telegram {
-  fill: white; /* آیکن سفید در hover */
+  fill: white; 
 }
 .btn3 {
   position: relative;
@@ -536,5 +537,54 @@ p, h1 {
   border-color: #fff;
 }
 
+/* posts button */
 
+.just {
+  padding: 0;
+  width: 135px;
+  height: 47px;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 900;
+  border: 3px solid #f39923;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
 
+/* posts bachground */
+
+/* From Uiverse.io by jeremyssocial */ 
+.container {
+  /* Basic dimensions and centering */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Dark mode colors and gradient */
+  background: #121212; /* Fallback for browsers that don't support gradients */
+  background: linear-gradient(
+    135deg,
+    #121212 25%,
+    #1a1a1a 25%,
+    #1a1a1a 50%,
+    #121212 50%,
+    #121212 75%,
+    #1a1a1a 75%,
+    #1a1a1a
+  );
+  background-size: 40px 40px;
+
+  /* Animation */
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
